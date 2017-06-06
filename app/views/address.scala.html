@@ -1,0 +1,7 @@
+@(persons:List[Persons])
+7A Jeevan Asha, 60A Peddar Road, Mumbai 400026
+
+@persons.map { p =>
+			<li>@p.id / @p.name / @p.age / @p.sex
+		</li>
+		}

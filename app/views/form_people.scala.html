@@ -1,0 +1,9 @@
+@(hi: Form[String])(implicit messages: Messages)
+@import helper._
+@import play.api.i18n.Messages.Implicits._
+
+@form(routes.FormPeople.gotPerson){
+	@inputText( hi("name"))
+	<input type ="submit" />
+}
+hi
